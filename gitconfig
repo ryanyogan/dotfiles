@@ -25,3 +25,11 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[user]
+	name = Ryan Yogan
+	email = ryanyogan@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

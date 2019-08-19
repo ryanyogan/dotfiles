@@ -12,8 +12,27 @@ alias b="bundle"
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias s="rspec"
 
+# Elixir
+alias mt="mix test"
+alias mtt="mt --trace"
+alias mn="mix new"
+alias mdg="mix deps.get"
+
+# GoLang
+alias gg="go get -u"
+alias gb="go build"
+alias gr="go run"
+
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
+
+alias cdg="cd /Users/ryanyogan/dev/gocode/src/github.com/ryanyogan"
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
+
+# Node / JS
+alias gc="graphcool"
+
+# Terraform
+alias tf="terraform"
